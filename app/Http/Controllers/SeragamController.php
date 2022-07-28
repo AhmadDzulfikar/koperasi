@@ -57,7 +57,7 @@ class SeragamController extends Controller
     public function filter(Request $request)
     {
         if ($request->has('filter')) {
-            $query = '%'.$request->filter.'%';
+            $query = ''.$request->filter.'';
             $data = M_Seragam::where('ukuran', 'like',$query)->get();
             return view('seragam', compact('data'));
             
