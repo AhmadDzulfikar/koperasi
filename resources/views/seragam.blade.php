@@ -93,6 +93,23 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
 
+                    <div class="col-12 col-md-2">
+                        <form action="{{ url('/koperasi-seragam/filter') }}">
+                            <span>
+                                <select class="form-select" aria-label="Filtering" name="filter">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            
+
+                                <button class="btn btn-primary" type="submit">Filter</button>
+                            </span>
+
+                        </form>
+                    </div>
+
 
 
                     <div class="col-lg-12 mt-5">

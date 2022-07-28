@@ -54,6 +54,18 @@ class SeragamController extends Controller
         return view('seragam',compact("data"));
     }
 
+    public function filter(Request $request)
+    {
+        if ($request->has('filter')) {
+            $query = '%'.$request->filter.'%';
+            $data = M_Seragam::where('ukuran', 'like',$query)->get();
+            return view('seragam', compact('data'));
+            
+        }
+
+        return view('seragam',compact("data"));
+    }
+
     /**
      * Store a newly created resource in storage.
      *

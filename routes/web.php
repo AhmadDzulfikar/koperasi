@@ -39,6 +39,7 @@ Route::post('/update-seragam/{id}', [SeragamController::class,'update']);
 Route::delete('/koperasi-seragam/{id}', [SeragamController::class,'destroy']);
 Route::get('/koperasi-seragam/search', [SeragamController::class,'search']);
 Route::get('/koperasi-seragam/sort', [SeragamController::class,'sort']);
+Route::get('/koperasi-seragam/filter', [SeragamController::class,'filter']);
 
 
 
